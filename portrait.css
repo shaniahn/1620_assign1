@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 5em 5em auto 5em;
+    grid-template-areas:
+    "header header header header header header"
+    "menu content content content content content"
+    "menu content content content content content"
+    "footer footer footer footer footer footer";
+}
+.header {
+    grid-area: header;
+    width: 100%;
+    background-color: #9B7F79;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.menu {
+    grid-area: menu;
+    background-color: rgb(255, 255, 255);
+    margin: .7em;
+    min-width: 5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.content {
+    grid-area: content;
+    background-color: rgb(224, 221, 217);
+    margin: .2em;
+    padding: .2em;
+}
+.footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #d38e8e;
+    display: flex;
+    justify-content: center;
+}
+.footertext {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ .footerwords {
+    padding: .5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; 
+    display: grid;
+    grid-column: 4;
+    grid-row: 1;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+.nav{
+    font-family: 'Roboto Slab', serif;
+    font-size: .7em;
+    margin-right: 3em;
+}
+label,textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: .7em;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    width: 85%;
+}
+label {
+    display: block;
+    padding: .7em;
+    margin-bottom: 10px;
+}
+.button1 {
+    background-color: #65bba8;
+    border: none;
+    color: white;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .6em;
+    margin: 1em 1em .3em 1.4em;
+    grid-row: 1;
+    grid-column: 1;
+    font-family: 'Roboto Slab', serif;
+    width: 7.9em;
+    overflow: hidden;
+  }
+  .button2 {
+    background-color: #4d4c4c;
+    border: none;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .6em;
+    grid-row: 1;
+    grid-column: 2;
+    margin: 1em .3em .3em .1em;
+    font-family: 'Roboto Slab', serif;
+    width: 7.9em;
+    overflow: hidden;
+  }
+  .button3 {
+    background-color: #65bba8;
+    border: none;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+    margin: 4px 2px;
+    grid-column: 5;
+    grid-row: 1;
+    font-family: 'Roboto Slab', serif;
+  }
+  .button4 {
+    background-color: #cf1515;
+    border: none;
+    color: white;
+    padding: .8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+    margin: 4px 2px;
+    grid-column: 6;
+    grid-row: 1;
+    font-family: 'Roboto Slab', serif;
+  }
+  .button1, .button2, .button3, .button4 {border-radius: 12px;}
+  .lowerbuttons{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: .3em;
+    justify-content: center;
+  }
+  .upperbuttons{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(1);
+  }
+  .insta{
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 2 / 2;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    justify-content: center;
+    padding-left: 1.5em;
+    padding-top: .5em;
+  }
+  .twitter{
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 2 / 2;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    justify-content: center;
+    padding-right: 1.5em;
+    padding-top: .5em;
+  }
