@@ -74,6 +74,7 @@ textarea {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
     width: 85%;
+    height: 85%
 }
 label {
     display: block;
