@@ -174,3 +174,11 @@ label {
     padding-right: 1.5em;
     padding-top: .5em;
   }
+  .dark{
+    background-color: #5E4C4C;
+    color: white;
+  }
+.darkbtn {
+  background-color: #800040;
+  color: white;
+}
