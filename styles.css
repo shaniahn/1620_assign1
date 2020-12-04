@@ -101,6 +101,7 @@ label {
     background-color: #4d4c4c;
     border: none;
     color: white;
+    content: "Dark Theme";
     padding: 1em;
     text-align: center;
     text-decoration: none;
@@ -174,3 +175,11 @@ label {
     padding-right: 1.5em;
     padding-top: .5em;
   }
+  .dark{
+    background-color: #5E4C4C;
+    color: white;
+  }
+.darkbtn {
+  background-color: #800040;
+  color: white;
+}
